@@ -1,11 +1,13 @@
+
+import 'dart:io';
 void main() {
 
   // Question 1: Write a Dart program to print "Hello".
   print('Hello');
 
   // Question 2: Declare an integer variable and print its value.
-  int age = 20;
-  print(age);
+  int Age = 20;
+  print(Age);
 
   // Question 3: Write a Dart program to add two numbers.
   int a = 5;
@@ -93,5 +95,69 @@ void main() {
     print("Even Number");
   } else {
     print("Odd Number");
+  } 
+
+   //Switch statement
+
+   int day = 3;
+   switch (day){
+     case 1:
+     print("Monday");
+     break;
+
+     case 2:
+     print("tuesday");
+     break;
+
+     case 3:
+     print("wednesday");
+     break;
+
+     default:
+      print ("Invalid Day");
+   }
+
+  // Q1: Write a Dart program to check whether a person is eligible to vote or not.
+
+  print("Enter your age:");
+  int age = int.parse(stdin.readLineSync()!);
+
+  if (age >= 18) {
+    print("You are eligible");
+  } else {
+    print("You are not eligible");
+  }
+
+
+  // Q2: Write a Dart program to check whether a number is positive, negative, or zero.
+
+  print("Enter Number:");
+  int NUM = int.parse(stdin.readLineSync()!);
+
+  if (NUM > 0) {
+    print("Number is Positive.");
+  } else if (NUM < 0) {
+    print("Number is Negative.");
+  } else {
+    print("Number is Zero.");
+  }
+
+
+  // Q3: Write a Dart program to print the multiplication table of a number up to 10.
+
+  print("Enter a number:");
+  int tableNum = int.parse(stdin.readLineSync()!);
+
+  for (int i = 1; i <= 10; i++) {
+    print("$tableNum x $i = ${tableNum * i}");
+  }
+
+
+  // Q4: Write a Dart program to create a list of names and print all the elements using a for loop.
+
+  List<String> fruits = ["Muffin", "Leo", "Mickey", "Sassy"];
+
+  for (int i = 0; i < fruits.length; i++) {
+    print(fruits[i]);
   }
 }
