@@ -23,6 +23,7 @@ void main() {
   salary -= 5000;
   print(salary);
 
+
   // Question 11: Print a square pattern.
   print("Create Square Shape");
   print("************");
@@ -31,6 +32,70 @@ void main() {
   print("*          *");
   print("************");
 
- 
+  String m = "Maham";
+   print (m);
+
+  int x = 20;
+   print (x);
+  
+  
+  int z = 20;
+  int y = 30;
+
+  bool smaller , greater , equal;
+  smaller = z < y;
+  greater = z > y;
+  equal = z==y;
+
+  print(smaller);
+  print(greater);
+
+  print(equal);
+
+
+for (int i = 0; i <= 50; i++) {
+  if (i % 2 != 0) {
+    print('Odd number: $i');
+  }
+}
+print('End');
+
+for (int i = 0; i <= 50; i++) {
+  if (i % 2 == 0) {
+    print('Odd number: $i');
+  }
+}
+print('End');
+
+
+for (int i = 0; i <= 50; i++) {
+  if (i % 5 == 0) {
+    print('multiples of 5: $i');
+  }
+}
+print('End');
+
+
+int sum = 0;
+
+for (int i = 1; i <= 50; i++) {
+  if (i % 2 == 0) {
+    sum = sum + i;
+  }
+}
+
+print(sum);
+
+
+
+
+
+
+
+
+
 
 }
+
+
+
